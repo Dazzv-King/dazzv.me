@@ -1,0 +1,297 @@
+//шрифт
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&display=swap');
+//обнуление
+@import "nullstyle.scss";
+//colors переменные
+$black: #000;
+$green: #45F736;
+$lightgrey: #C4C4C4;
+$grey: #7B7B7B;
+
+$Roboto: 'Roboto', sans-serif;
+$blackOps: 'Black Ops One', cursive;
+
+//--------------
+body {
+  background-image: url("../img/back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+  .container {
+    margin: 0 auto;
+    width: 85%;
+    font-family: $Roboto;
+  }
+  
+  .sec_title {
+    h1 {
+      margin: 200px 0 100px 0;
+      font-size: 58px;
+      color: $grey;
+      text-align: center;
+      font-family: $blackOps;
+    }
+    span {
+      color: $green;
+    }
+  }
+  .sec_body{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    div {
+      width: calc(40% - 30px)
+    }
+    .contacts {
+      div {
+        height: 90px;
+        border: 2px #2c3e50 solid;
+        margin: 0 0 40px 0;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .my {
+        display: flex;
+        align-items: center;
+        border: none;
+        box-shadow: 0 6px 8px rgb(165, 165, 165);
+        img {
+          height: 35px;
+          width: auto;
+          margin: 0 20px;
+          border-color: $grey;
+        }
+        a {
+          font-size: 16px;
+          color: $grey;
+        }
+      }
+    }
+    .contactbtn {
+        height: 38px;
+        padding: 0 18px;
+        border-radius: 30px;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        background-color: $grey;
+        margin: 20px 30px 0 0;
+        font-family: $Roboto;
+    }
+  
+    hr {
+      height: 300px;
+      margin: 50px 0;
+    }
+    .contactme {
+      display: flex;
+      form {
+        width: 100%;
+        div {
+          width: 100%;
+          p {
+            text-align: start;
+            line-height: 20px;
+            font-size: 20px;
+            height: 30px;
+            color: $grey;
+          }
+         
+          input {
+            border: none;
+            outline: none;
+            box-shadow: 0 4px 8px rgb(165, 165, 165);
+            height: 50px;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 0 8px;
+          }
+  
+          textarea {
+            height: 250px;
+            width: 100%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(165, 165, 165);
+            padding: 10px 8px;
+          }
+          
+        }
+      }
+      .sec_btn {
+        display: flex;
+      }
+      
+    }
+}
+//Home
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0 0;
+  .nav{
+    ul {
+      display: flex;
+      li{
+        list-style-type: none;
+        margin: 20px 15px 0;
+      }
+    }
+    a {
+      color: $black;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $Roboto;
+      transition: 0.3s;
+    }
+    a:after {
+        background-color: $green; /*задаём цвет линии*/
+        display: block;
+        content: "";
+        height: 2px; /*задаём ширину линии*/
+        width: 10px; /*задаём длинну линии до наведения курсора*/
+        transition: width .3s ease-in-out;
+      }
+    a:hover:after,
+    a:focus:after {
+      width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+    a:hover{
+      color: $green;
+    } 
+  }
+  .logo_1 {
+    height: 60px;
+    width: auto;
+    margin: 0 0 -5px 0;
+  }
+  .logo_2 {
+    height: 30px;
+    width: 93px;
+    margin-left: -10px;
+  }
+  .dark {
+    margin: 20px 0 0;
+  }
+}
+.btn {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  background-color: $grey;
+  margin: 20px 0 0;
+  font-family: $Roboto;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: $grey;
+  background-color: #fff;
+  border: 2px solid $grey;
+}
+.home_body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  height: 85vmin;
+  .right_side {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    
+  }
+  .left_side {
+    font-family: $blackOps;
+    width: 60%;
+    h2 {
+      font-size: 36px;
+    }
+    span {
+      color: $green;
+    }
+    .im {
+      display: flex;
+      h1{
+        font-size: 70px;
+      }
+      span{
+        margin-left: 15px;
+        font-size: 70px;
+      }
+    }
+    h4 {
+      font-family: $Roboto;
+      font-size: 24px;
+      color: $lightgrey;
+      width: 60%;
+    }
+    .button {
+      margin: 20px 0 0 0;
+      position: relative;
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      cursor: pointer;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background: $grey;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-family: $Roboto;
+        border: 2px solid $grey;
+      }
+      span:nth-child(2){
+        color: $grey;
+        background: #fff;
+        overflow: hidden;
+        z-index: 2;
+        transition: 0.5s;
+        clip-path: polygon(0% 0%, 41% 0, 55% 50%, 44% 100%, 0 100%);
+      }
+      span:nth-child(2):hover {
+        clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    
+      }
+      span:nth-child(1):hover ~ span:nth-child(2){
+        clip-path: polygon(0% 0%, 0 0, 0 49%, 0 100%, 0% 100%);
+      }
+    }
+  }
+  .links{
+    display: flex;
+    align-items: center;
+    hr {
+      height: 170px;
+      width: 2px;
+      background-color: $black;
+      content: "";
+    }
+    li {
+      padding: 5px 20px 5px 5px;
+      transition: 0.5s;
+      
+    }
+    li:hover{
+      transform: scale(1.1);
+    }
+  }
+}
